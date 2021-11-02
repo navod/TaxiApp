@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "TaxiApp",
-    "slug": "TaxiApp",
-    "version": "1.0.0",
+    "name": "Taxi",
+    "slug": "Taxi",
+    "version": "2.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/applogo.png",
     "splash": {
-      "image": "./assets/logo.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#21C392"
     },
@@ -15,14 +15,23 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyBpbh2v6y2ko2ncF9v8dddBfxkxXvAwosg"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#21C392"
       },
-      "package": "com.navodsachi.TaxiApp"
+      "package": "com.navodsachi.TaxiApp",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBpbh2v6y2ko2ncF9v8dddBfxkxXvAwosg"
+        }
+      },
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/favicon.png"
